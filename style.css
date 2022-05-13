@@ -1,0 +1,287 @@
+
+:root{
+    --background: #fafafa;
+    --facebook: #385185;
+    --border: #dbdbdb;
+}
+
+/* Facebook icon */
+
+.fa {
+    padding: 3px 1px 0 5px;
+    font-size: 3px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1px;
+    margin: 2px 8px 0 0;
+  }
+
+  .fa-facebook {
+    background: var(--facebook);
+    color: white;
+  }
+
+/* Page */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    background: var(--background);
+}
+
+main.flex-container {
+    display: flex;
+    width: 100vw;
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.section2 {
+    margin-top: 1.2rem;
+    margin-left: 2rem;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid var(--border);
+    border-radius: 2px;
+    width: 21.8rem;
+    height: 24.6rem;
+    justify-content: space-around;
+    background: #fff;
+}
+
+
+
+.login img {
+    width: 10.9rem;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;    
+}
+
+.input-field input {
+    margin-top: 0.5rem;
+    width: 16.2rem;
+    height: 2.2rem;
+    padding: 0 0.2rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--background);
+    color: rgba(0, 0, 0, 0.9);
+    
+}
+ 
+.input-field input::placeholder{
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 11px;
+}
+
+.input-field input:focus{
+    outline-color:  rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    color: #fff;
+    border: none;
+    background: #b2dffc;
+    font-weight: 600;
+    margin-top: 1.2rem;
+    padding: 4px;
+    border-radius: 4px;
+    height: 1.9rem;
+}
+
+.separator {
+    display: flex;
+}
+
+.or {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    font-weight: 600;
+    background: white;
+    text-align: center;
+    margin: 0 14px;
+}
+
+
+.line-separator {
+    display: flex;
+    width: 110px;
+    height: 1px;
+    background-color: var(--border);
+    margin-top: 9px;
+}
+
+#facebook-label-login {
+    text-decoration: none;
+    color: var(--facebook);
+    font-weight: 600;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #00376b;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.sign-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid var(--border);
+    border-radius: 2px;
+    width: 21.8rem;
+    height: 3.9rem;
+    background: #fff;
+    margin-top: 10px;
+    color: #262626;
+}
+
+.button-signup {
+    margin-left: 5px;
+} 
+
+.button-signup a{
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.get-app {
+    text-align: center;
+}
+
+.get-app p {
+    margin: 25px 0;
+
+}
+
+.get-mobile-app img {
+    width: 134.40px;
+    border-radius: 5px;
+    border: 1px solid rgb(185, 182, 182);
+}
+
+.google-play {
+    margin-left: 7px;
+}
+
+footer {
+    margin-top: 50px;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-left: 13px;
+}
+
+.firsts-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#language {
+    border: none;
+    color: #8e8e8e;
+    white-space: pre;
+    background: var(--background);
+    width: 70px;
+}
+
+.firsts-links p {
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-left: 13px;
+}
+
+
+
+@media (max-width: 800px){
+    .flex-image {
+        display: none;
+    }
+}
+
+
+@media (max-width: 657px) {
+    
+    .firsts-links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+    
+/* Mobile */
+
+@media (max-width: 480px) {
+    .section2 {
+        margin-top: 1.2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 376px) {
+
+    main.flex-container {
+        margin-top: 1rem;
+    }
+
+    .login {
+        border: none;
+        background: var(--background);
+
+    }
+
+    .sign-up {
+        border: none;
+        background: var(--background);
+
+    }
+    
+}
+
+@media (max-width: 350px) {
+       
+    .login{
+        width: 20rem;
+        height: 24.6rem;
+        justify-content: space-around;
+        background: var(--background);
+        flex-shrink: 2;
+    }
+
+    .login img {
+        width: 9rem;
+    }
+    
+    .input-field input {
+        width: 14rem;
+        height: 2rem;
+    }
+    .get-mobile-app a{
+        display: block;
+    }
+    
+}
+
