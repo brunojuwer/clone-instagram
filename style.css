@@ -44,6 +44,8 @@ main.flex-container {
 .section2 {
     margin-top: 1.2rem;
     margin-left: 2rem;
+    max-width: 352px;
+    width: 100%;
 }
 
 .login{
@@ -52,21 +54,23 @@ main.flex-container {
     align-items: center;
     border: 1.5px solid var(--border);
     border-radius: 2px;
-    width: 21.8rem;
+    width: 100%;
     height: 24.6rem;
     justify-content: space-around;
     background: #fff;
 }
 
-
+.img-container {
+    max-width: 10.9rem;
+}
 
 .login img {
-    width: 10.9rem;
+    width: 100%;
 }
 
 .input-field {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;   
 }
 
 .input-field input {
@@ -161,13 +165,16 @@ main.flex-container {
 
 .get-app {
     text-align: center;
+    width: 100%;
 }
 
 .get-app p {
     margin: 25px 0;
 
 }
-
+.get-mobile-app {
+    width: 100%;
+}
 .get-mobile-app img {
     width: 134.40px;
     border-radius: 5px;
